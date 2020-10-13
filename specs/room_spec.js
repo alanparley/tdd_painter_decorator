@@ -6,4 +6,8 @@ describe('Room', function () {
     beforeEach(function () {
         room = new Room(100, false, true)
     });
-})
+    it('should have an area', function () {
+        const actual = room.area;
+        assert.strictEqual(actual, 100);
+    });
+});
