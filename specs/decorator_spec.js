@@ -11,7 +11,7 @@ describe('Decorator', function () {
         assert.deepStrictEqual(actual, [])
     })
     it('should be able to add paint to stock', function () {
-        decorator.addPaint(1);
+        decorator.addPaint('can1');
         const actual = decorator.numberofcans();
         assert.strictEqual(actual, 1);
 
